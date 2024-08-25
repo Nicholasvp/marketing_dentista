@@ -68,13 +68,10 @@ class _SearchAppBarState extends State<SearchAppBar> {
                   border: InputBorder.none,
                 ),
                 onSubmit: _search,
-                suggestions: _textController.text.isNotEmpty
-                    ? suggestions.map((suggestion) => SearchFieldListItem(suggestion)).toList()
-                    : [],
+                suggestions: suggestions.map((suggestion) => SearchFieldListItem(suggestion)).toList(),
                 suggestionItemDecoration: const BoxDecoration(
                   color: Colors.white,
                 ),
-                autoCorrect: false,
               ),
             ),
             IconButton(
