@@ -72,6 +72,7 @@ class _SearchAppBarState extends State<SearchAppBar> {
                 suggestionItemDecoration: const BoxDecoration(
                   color: Colors.white,
                 ),
+                onTapOutside: (p0) => FocusScope.of(context).unfocus(),
               ),
             ),
             IconButton(
